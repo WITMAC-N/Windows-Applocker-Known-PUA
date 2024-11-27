@@ -1,0 +1,182 @@
+<AppLockerPolicy Version="1">
+  <RuleCollection Type="Appx" EnforcementMode="NotConfigured">
+    <FilePublisherRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="(Default Rule) All signed packaged apps" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="0.0.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+  </RuleCollection>
+  <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Exe" EnforcementMode="Enabled">
+    <FilePublisherRule Id="07e20987-8262-44a3-8d82-64dcb10eb026" Name="D_HELPSOFTDRIVERUPDATER_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=PC HELPSOFT LABS INC., L=VICTORIA, S=BRITISH COLUMBIA, C=CA" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="185e1cbc-7f38-4704-a5ae-c78788393363" Name="D_DRIVERTONIC_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=DRIVER TONIC, L=JAIPUR, S=RAJASTHAN, C=IN" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="1a406971-5ccc-4acf-b3e6-4a9e7a95fcee" Name="D_ClearBar_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=CLEARBAR, L=SAN FRANCISCO, S=CALIFORNIA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="21a40caa-c5cc-47a9-bc96-2f66fc1b36d9" Name="D_OUROBOROSBROWSER_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=WHITE SAND MEDIA, INC., L=ROAD TOWN, C=VG" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="268525bb-4a0a-432c-9562-f157598cf026" Name="D_OneLaunch_PUA" Description="OneLaunch Browser PUA" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=ONELAUNCH TECHNOLOGIES INC., L=VICTORIA, S=BRITISH COLUMBIA, C=CA" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="2fddf8ee-de85-4cb5-874d-5ec9ce5dd341" Name="D_VideoDownload_Adware" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=CHENGDU YIWO TECH DEVELOPMENT CO., LTD., L=成都市, S=四川省, C=CN" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="3d08f1e0-f3c7-41a5-9212-b73cf20e8c18" Name="D_MY.COMGAMECENTER_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MY.COM .BV, L=AMSTERDAM, S=NETHERLANDS, C=NL" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="46431ceb-52f6-4625-9a6e-3b42317896ad" Name="D_ASKToolbar_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=ASK.COM, L=OAKLAND, S=CALIFORNIA, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="73515f35-de52-4894-8423-e89dcb0db3ff" Name="D_SLIMCLEANER_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=SLIMWARE UTILITIES HOLDINGS, INC., L=NEW YORK, S=NEW YORK, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="762e4e9e-5cdf-41e1-b5ef-ecc339996316" Name="D_PCAPPSTORE_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=FAST CORPORATION LTD, L=RA'ANANA, C=IL" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="9755812e-86f3-4675-bad6-953b9cc55c4d" Name="D_WaveBrowser_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=WAVESOR SOFTWARE (EIGHTPOINT TECHNOLOGIES LTD. SEZC), L=GEORGE TOWN, C=KY" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="abf331c5-d333-429b-82cd-fa351a2f1a72" Name="D_DSO_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=DRIVER SUPPORT, L=TEMPLE, S=TEXAS, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="b59fe892-0efe-4f7d-b167-5671b309b1ec" Name="D_WALLIANT_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=CLEVERSORT FZ-LLC, L=RAS-AL-KHAIMAH, S=RAS-AL-KHAIMAH, C=AE" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="e221d29b-a117-4521-9ac4-5c121231b672" Name="D_CCLEANER_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=PIRIFORM SOFTWARE LIMITED, L=LONDON, C=GB" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="e76031be-83dd-433b-98c9-20d9343b0d0d" Name="D_bytefence_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=BYTE TECHNOLOGIES LLC, L=WILMINGTON, S=DELAWARE, C=US" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePathRule Id="5294b80a-9be9-47e0-851a-cfbbc4f18b2d" Name="All files" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="921cc481-6e17-4653-8f75-050b80acca20" Name="(Default Rule) All files located in the Program Files folder" Description="Allows members of the Everyone group to run applications that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a61c8b2c-a319-4cd0-9690-d2177cad7b51" Name="(Default Rule) All files located in the Windows folder" Description="Allows members of the Everyone group to run applications that are located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="fd686d83-a829-4351-8ff4-27c7de5755d2" Name="(Default Rule) All files" Description="Allows members of the local Administrators group to run all applications." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePublisherRule Id="c8c58b6b-734f-49f7-b97f-d0f3d0e90536" Name="D_Shift_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=SHIFT (SHIFT TECHNOLOGIES INC.), L=VICTORIA, S=BRITISH COLUMBIA, C=CA" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+  </RuleCollection>
+  <RuleCollection Type="Msi" EnforcementMode="AuditOnly">
+    <FilePublisherRule Id="b7af7102-efde-4369-8a89-7a6a392d1473" Name="(Default Rule) All digitally signed Windows Installer files" Description="Allows members of the Everyone group to run digitally signed Windows Installer files." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="0.0.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePathRule Id="5b290184-345a-4453-b184-45305f6d9a54" Name="(Default Rule) All Windows Installer files in %systemdrive%\Windows\Installer" Description="Allows members of the Everyone group to run all Windows Installer files located in %systemdrive%\Windows\Installer." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Installer\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="64ad46ff-0d71-4fa0-a30b-3f3d30c5433d" Name="(Default Rule) All Windows Installer files" Description="Allows members of the local Administrators group to run all Windows Installer files." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*.*" />
+      </Conditions>
+    </FilePathRule>
+  </RuleCollection>
+  <RuleCollection Type="Script" EnforcementMode="NotConfigured">
+    <FilePathRule Id="06dce67b-934c-454f-a263-2515c8796a5d" Name="(Default Rule) All scripts located in the Program Files folder" Description="Allows members of the Everyone group to run scripts that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="9428c672-5fc3-47f4-808a-a0011f36dd2c" Name="(Default Rule) All scripts located in the Windows folder" Description="Allows members of the Everyone group to run scripts that are located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ed97d0cb-15ff-430f-b82c-8d7832957725" Name="(Default Rule) All scripts" Description="Allows members of the local Administrators group to run all scripts." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+  </RuleCollection>
+</AppLockerPolicy>
