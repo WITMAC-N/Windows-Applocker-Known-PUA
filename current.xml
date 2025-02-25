@@ -73,13 +73,6 @@
         </FilePublisherCondition>
       </Conditions>
     </FilePublisherRule>
-    <FilePublisherRule Id="762e4e9e-5cdf-41e1-b5ef-ecc339996316" Name="D_PCAPPSTORE_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=FAST CORPORATION LTD, L=RA'ANANA, C=IL" ProductName="*" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
     <FilePublisherRule Id="9755812e-86f3-4675-bad6-953b9cc55c4d" Name="D_WaveBrowser_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
         <FilePublisherCondition PublisherName="O=WAVESOR SOFTWARE (EIGHTPOINT TECHNOLOGIES LTD. SEZC), L=GEORGE TOWN, C=KY" ProductName="*" BinaryName="*">
@@ -130,14 +123,29 @@
         <FilePathCondition Path="%WINDIR%\*" />
       </Conditions>
     </FilePathRule>
-    <FilePathRule Id="fd686d83-a829-4351-8ff4-27c7de5755d2" Name="(Default Rule) All files" Description="Allows members of the local Administrators group to run all applications." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+    <FilePathRule Id="edd31572-b6a7-4d9f-9666-edd312af5752" Name="D_Shift-proxy_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
-        <FilePathCondition Path="*" />
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Shift\chromium\shift_proxy.exe" />
       </Conditions>
     </FilePathRule>
-    <FilePublisherRule Id="c8c58b6b-734f-49f7-b97f-d0f3d0e90536" Name="D_Shift_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <FilePathRule Id="a1cb7b39-b458-4514-ad21-5a5512631923" Name="D_Shift-Chrome_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
-        <FilePublisherCondition PublisherName="O=SHIFT (SHIFT TECHNOLOGIES INC.), L=VICTORIA, S=BRITISH COLUMBIA, C=CA" ProductName="*" BinaryName="*">
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Shift\chromium\*\shift_pwa_launcher.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="996db205-3b58-42b5-ac4f-95b432597b90" Name="D_Shift-exe_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Shift\chromium\shift.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="52a6dbb7-9755-47ec-9425-e131158f5cfd" Name="D_PcAppStore-path_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\PCAppStore\*.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePublisherRule Id="762e4e9e-5cdf-41e1-b5ef-ecc339996316" Name="D_PcAppStore-cert_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=FAST CORPORATION LTD, L=RA'ANANA, C=IL" ProductName="*" BinaryName="*">
           <BinaryVersionRange LowSection="*" HighSection="*" />
         </FilePublisherCondition>
       </Conditions>
@@ -154,11 +162,6 @@
     <FilePathRule Id="5b290184-345a-4453-b184-45305f6d9a54" Name="(Default Rule) All Windows Installer files in %systemdrive%\Windows\Installer" Description="Allows members of the Everyone group to run all Windows Installer files located in %systemdrive%\Windows\Installer." UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePathCondition Path="%WINDIR%\Installer\*" />
-      </Conditions>
-    </FilePathRule>
-    <FilePathRule Id="64ad46ff-0d71-4fa0-a30b-3f3d30c5433d" Name="(Default Rule) All Windows Installer files" Description="Allows members of the local Administrators group to run all Windows Installer files." UserOrGroupSid="S-1-5-32-544" Action="Allow">
-      <Conditions>
-        <FilePathCondition Path="*.*" />
       </Conditions>
     </FilePathRule>
   </RuleCollection>
