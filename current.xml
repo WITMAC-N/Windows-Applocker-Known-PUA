@@ -73,6 +73,13 @@
         </FilePublisherCondition>
       </Conditions>
     </FilePublisherRule>
+    <FilePublisherRule Id="762e4e9e-5cdf-41e1-b5ef-ecc339996316" Name="D_PcAppStore-cert_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=FAST CORPORATION LTD, L=RA'ANANA, C=IL" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
     <FilePublisherRule Id="9755812e-86f3-4675-bad6-953b9cc55c4d" Name="D_WaveBrowser_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
         <FilePublisherCondition PublisherName="O=WAVESOR SOFTWARE (EIGHTPOINT TECHNOLOGIES LTD. SEZC), L=GEORGE TOWN, C=KY" ProductName="*" BinaryName="*">
@@ -113,9 +120,24 @@
         <FilePathCondition Path="*" />
       </Conditions>
     </FilePathRule>
+    <FilePathRule Id="52a6dbb7-9755-47ec-9425-e131158f5cfd" Name="D_PcAppStore-path_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\PCAppStore\*.exe" />
+      </Conditions>
+    </FilePathRule>
     <FilePathRule Id="921cc481-6e17-4653-8f75-050b80acca20" Name="(Default Rule) All files located in the Program Files folder" Description="Allows members of the Everyone group to run applications that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="996db205-3b58-42b5-ac4f-95b432597b90" Name="D_Shift-exe_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Shift\chromium\shift.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a1cb7b39-b458-4514-ad21-5a5512631923" Name="D_Shift-Chrome_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Shift\chromium\*\shift_pwa_launcher.exe" />
       </Conditions>
     </FilePathRule>
     <FilePathRule Id="a61c8b2c-a319-4cd0-9690-d2177cad7b51" Name="(Default Rule) All files located in the Windows folder" Description="Allows members of the Everyone group to run applications that are located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
@@ -128,24 +150,9 @@
         <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Shift\chromium\shift_proxy.exe" />
       </Conditions>
     </FilePathRule>
-    <FilePathRule Id="a1cb7b39-b458-4514-ad21-5a5512631923" Name="D_Shift-Chrome_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <FilePublisherRule Id="78fb9925-3b35-4a90-ba9b-b8b0d1fce8f8" Name="D_Pulse-browser_Malware" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Shift\chromium\*\shift_pwa_launcher.exe" />
-      </Conditions>
-    </FilePathRule>
-    <FilePathRule Id="996db205-3b58-42b5-ac4f-95b432597b90" Name="D_Shift-exe_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\Users\*\AppData\Local\Shift\chromium\shift.exe" />
-      </Conditions>
-    </FilePathRule>
-    <FilePathRule Id="52a6dbb7-9755-47ec-9425-e131158f5cfd" Name="D_PcAppStore-path_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\Users\*\PCAppStore\*.exe" />
-      </Conditions>
-    </FilePathRule>
-    <FilePublisherRule Id="762e4e9e-5cdf-41e1-b5ef-ecc339996316" Name="D_PcAppStore-cert_PUA" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=FAST CORPORATION LTD, L=RA'ANANA, C=IL" ProductName="*" BinaryName="*">
+        <FilePublisherCondition PublisherName="O=ALABAMA TECHNOLOGY USA, LLC, S=NEW MEXICO, C=US" ProductName="*" BinaryName="*">
           <BinaryVersionRange LowSection="*" HighSection="*" />
         </FilePublisherCondition>
       </Conditions>
