@@ -1,4 +1,5 @@
 # This was made for my environment.
+# non-production example script
 
 $xmlurl = "https://raw.githubusercontent.com/WITMAC-N/Windows-Applocker-Known-PUA/refs/heads/main/current.xml"
 $folder = "C:\Data\ProfileSetup"
@@ -12,4 +13,5 @@ if (-not (Test-Path $folder)) {
 # Download XML
 Invoke-WebRequest $xmlurl -OutFile $downloaded -ErrorAction Stop
 # Import AppLocker policy
+
 Set-AppLockerPolicy -XMLPolicy $downloaded -ErrorAction Stop
